@@ -1,0 +1,256 @@
+.main-container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+html {
+    font-size: 16px;
+  }
+//Home page
+
+.home-page{
+    display: flex;
+    height: 700px;
+    
+    .half-page{
+        width: 50%;
+    }
+    .main-left{
+        background-image: url(https://image.freepik.com/free-vector/attractive-happy-girl-hairdresser-with-comb-hair-dryer-portrait-isolated-white-background-vector-illustration_1284-2390.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        .enter-left{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                background: #ff3ad6;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 6.5;
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+                &:hover{
+                    // background: red;
+                }
+            }
+            p{
+                font-size: 22px;
+                margin-bottom: 7.6%;
+            }
+            span{
+                font-size: 55px;
+                color: white;
+                margin-bottom: 4%;
+            }
+        }
+        
+    }
+    .main-right{
+        background-image: url(https://ih0.redbubble.net/image.468072268.7070/flat,1000x1000,075,f.u1.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .enter-right{
+            display: flex;
+            align-items: center;
+            margin-right: 15%;
+            a{
+                text-decoration: none;
+                background: #658ef8;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 6.5;
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 22px;
+                margin-bottom: 9%;
+            }
+            span{
+                font-size: 55px;
+                margin-bottom: 4%;
+            }
+        }
+       
+    }
+}
+//Admin page header
+.bg{
+    background-image: url(https://image.freepik.com/free-photo/elevated-view-of-palm-leaves-on-pink-background_23-2147837925.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 698px;
+    padding: 1px 0;
+    .title{
+        margin: 0;
+        padding: 22px 0;
+        color: white;
+    }
+}
+
+//Calendar page
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.choose-day, .choose-time, .confirm{
+    width: 30%;
+    h3{
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+    }
+}
+.choose-time {
+    .time-container {
+        height: 270px;
+        display: flex;
+        justify-content: space-around;
+        background: rgba(255, 255, 255, 0.6);
+        .houres{
+            width: 40%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        
+            .time{
+                width: 60%;
+                border: none;
+                font-size: 16px;
+                padding: 1px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #f4ced5;
+            }
+        }
+        .minutes{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            button {
+                width: 60%;
+                border: none;
+                font-size: 22px;
+                margin: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #ec91a2;
+                padding: 10px;
+            }
+        }
+    }
+}
+.confirm{
+    .confirm-container{
+        height: 270px;
+        background: rgba(255, 255, 255, 0.6);
+        form{
+            padding: 10px 15px;
+            label{
+                font-size: 18px;
+                input{
+                    margin: 8px 0;
+                    width: 95%;
+                    font-size: 16px;
+                    padding: 8px;
+                    border: none;
+                    border-radius: 4px;
+                }
+            }
+            button{
+                width: 60%;
+                border: none;
+                font-size: 16px;
+                padding: 1px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #f4ced5;
+                &:hover{
+                    background: pink;
+                }
+            }
+        }
+    }
+}
+//Admin page reservation filter 
+.reservation-filter {
+    h1{
+        margin: 0;
+        padding: 32px 0;
+        color: white;
+        font-size: 32px
+    }
+    input{
+        margin: 8px 0;
+        width: 26%;
+        font-size: 16px;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+    }
+    button{
+        border: none;
+        padding: 6px 8px 9px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #ec91a2;
+        font-size: 16px;
+        margin: 8px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li.clients-list{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 5px 0;
+            background: rgba(255, 255, 255, 0.6);
+            span{
+                width: 15%;
+                text-align: center;
+                font-size: 18px;
+            }
+            .last-span {
+                display: flex;
+                justify-content: center;
+                p{
+                    margin: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.reservation-list {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    span{
+        width: 16%;
+        text-align: center;
+    }
+}
